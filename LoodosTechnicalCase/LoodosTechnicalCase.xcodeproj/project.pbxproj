@@ -15,6 +15,7 @@
 		CE3637C22AD84993000B79DE /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3637C12AD84993000B79DE /* MovieDetailViewModel.swift */; };
 		CE3637C82AD885BB000B79DE /* EmptyListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3637C72AD885BB000B79DE /* EmptyListView.xib */; };
 		CE3637CA2AD88799000B79DE /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3637C92AD88799000B79DE /* EmptyListView.swift */; };
+		CE3637CC2AD89520000B79DE /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = CE3637CB2AD89520000B79DE /* Documentation.docc */; };
 		CEC1578F2AD6CF78002BB2CA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1578E2AD6CF78002BB2CA /* Reachability.swift */; };
 		CEC157912AD6D21F002BB2CA /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC157902AD6D21F002BB2CA /* HomeNavigationController.swift */; };
 		CEC157932AD6D293002BB2CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC157922AD6D293002BB2CA /* Extensions.swift */; };
@@ -47,6 +48,7 @@
 		CE3637C52AD871BF000B79DE /* LoodosTechnicalCase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoodosTechnicalCase.entitlements; sourceTree = "<group>"; };
 		CE3637C72AD885BB000B79DE /* EmptyListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyListView.xib; sourceTree = "<group>"; };
 		CE3637C92AD88799000B79DE /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		CE3637CB2AD89520000B79DE /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		CEC1578E2AD6CF78002BB2CA /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		CEC157902AD6D21F002BB2CA /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
 		CEC157922AD6D293002BB2CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		CEC644EC2AD5AFF700A966FE /* LoodosTechnicalCase */ = {
 			isa = PBXGroup;
 			children = (
+				CE3637CB2AD89520000B79DE /* Documentation.docc */,
 				CE3637C52AD871BF000B79DE /* LoodosTechnicalCase.entitlements */,
 				CEC645042AD5B09D00A966FE /* Info */,
 				CEC645032AD5B07F00A966FE /* Storyboards */,
@@ -391,6 +394,7 @@
 				CE3637C22AD84993000B79DE /* MovieDetailViewModel.swift in Sources */,
 				CEC1579E2AD6E8AC002BB2CA /* BaseResponse.swift in Sources */,
 				CEC6450C2AD5CB7B00A966FE /* FirebaseRepository.swift in Sources */,
+				CE3637CC2AD89520000B79DE /* Documentation.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
