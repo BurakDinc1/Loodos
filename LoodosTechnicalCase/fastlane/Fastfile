@@ -1,0 +1,29 @@
+# Global Degiskenler
+Loodos_Apple_Mail = "apple@tsoft.com.tr"
+Loodos_Fastlane_Password = "112233"
+Loodos_Apple_TeamID = "TCQMDZ5UC9"
+Loodos_BundleID = "com.loodos.loodostechcase"
+
+
+default_platform(:ios)
+
+platform :ios do
+
+  # Push Certificate For Prod
+  desc "Get push notification cert from appstore connect."
+  lane :getPushCertificateForProd do
+    get_push_certificate(
+    force: true,
+    app_identifier: Loodos_BundleID,
+    team_id: Loodos_Apple_TeamID,
+    username: Loodos_Apple_Mail,
+    p12_password: Loodos_Fastlane_Password,
+    pem_name: "LoodosTechnicalCase_PNC",
+    output_path: "../LoodosTechnicalCase/PushCertificates/",
+    new_profile: proc do |profile_path|
+      puts profile_path
+    end
+  )
+  end
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_LoodosTechnicalCase {
+  umbrella header "Pods-LoodosTechnicalCase-umbrella.h"
+
+  export *
+  module * { export * }
+}

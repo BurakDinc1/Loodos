@@ -1,0 +1,49 @@
+platform :ios, '11.0'
+
+# Firebase kutuphaneleri.
+def firebase_pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Firestore'
+end
+
+# RXSwift kutuphaneleri.
+def rxswift_pods
+  pod 'RxSwift', '~> 5.1'
+  pod 'RxCocoa', '~> 5.1'
+end
+
+# Networking kutuphaneleri
+def alamofire_pods
+  pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+end
+
+# Resim kutuphaneleri
+def picture_pods
+  pod 'Kingfisher', '~> 5.0'
+end
+
+# Tum pod'larin iOS versiyonlamasi ayarlaniyor.
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      end
+    end
+  end
+end
+
+target 'LoodosTechnicalCase' do
+  use_frameworks!
+  firebase_pods
+  rxswift_pods
+  alamofire_pods
+  picture_pods
+end
